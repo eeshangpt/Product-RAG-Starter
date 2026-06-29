@@ -1,4 +1,4 @@
-# Prodcution RAG Starter
+# Production RAG Starter
 **Production RAG backend** - *FastAPI + LangGraph + pluggable vector store*.  
 **Launching soon.**  
 **Star to follow.**  
