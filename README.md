@@ -5,7 +5,7 @@
 
 ---
 ## Architecture
-![Starter Kit Architecture](./assest/Architecture.png)
+![Starter Kit Architecture](./assets/Architecture.png)
 
 ---
 ## Quickstart
@@ -25,10 +25,10 @@ open http://localhost:8501
 ---
 ## Screenshots
 ### Ingestion of PDFs
-![](./assest/01IngestingPDF.png)
+![](./assets/01IngestingPDF.png)
 ---
 ### Answer Generation and Chunk Retrieval
-![](./assest/02AnswerGeneration.png)
+![](./assets/02AnswerGeneration.png)
 ---
 ### Evaluation
-![](./assest/03Evaluation.png)
+![](./assets/03Evaluation.png)

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProductionRAG — Production-grade RAG, ready to ship</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">ProductionRAG</span>
+      <a class="btn btn-star" href="https://github.com/eeshangpt/Product-RAG-Starter" target="_blank" rel="noopener">
+        ★ Star on GitHub
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="badge">Open Source · Launching Soon</div>
+      <h1 class="hero-title">
+        Ship a <span class="gradient-text">production-grade</span><br />RAG backend today.
+      </h1>
+      <p class="hero-sub">
+        A battle-tested starter kit — FastAPI, LangGraph, and a pluggable vector store —
+        so you spend zero time on boilerplate and all of it on your product.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://github.com/eeshangpt/Product-RAG-Starter" target="_blank" rel="noopener">★ Star to follow</a>
+        <a class="btn btn-ghost" href="#architecture">See the architecture →</a>
+      </div>
+      <div class="hero-stack">
+        <span class="chip chip-purple">FastAPI</span>
+        <span class="chip chip-pink">LangGraph</span>
+        <span class="chip chip-cyan">OpenAI</span>
+        <span class="chip chip-orange">Streamlit</span>
+        <span class="chip chip-green">Docker</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="section section-light" id="architecture">
+    <div class="container">
+      <div class="section-label">Architecture</div>
+      <h2 class="section-title">Everything you need, nothing you don't.</h2>
+      <p class="section-sub">
+        A clean, opinionated pipeline from raw PDF to grounded answer — with evaluation baked in from day one.
+      </p>
+      <div class="arch-img-wrap">
+        <img src="assets/Architecture.png" alt="ProductionRAG Architecture Diagram" class="arch-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / SCREENSHOTS -->
+  <section class="section section-dark" id="features">
+    <div class="container">
+      <div class="section-label section-label-light">Features</div>
+      <h2 class="section-title section-title-light">Three stages, fully wired.</h2>
+      <p class="section-sub section-sub-light">
+        Ingest documents, generate grounded answers, and measure quality — out of the box.
+      </p>
+      <div class="features-grid">
+
+        <div class="feature-card feature-card-purple">
+          <div class="feature-num">01</div>
+          <h3 class="feature-heading">PDF Ingestion</h3>
+          <p class="feature-desc">
+            Upload any PDF. The pipeline chunks, embeds, and indexes it into the vector store automatically.
+          </p>
+          <div class="screenshot-wrap">
+            <img src="assets/01IngestingPDF.png" alt="PDF Ingestion UI" class="screenshot" />
+          </div>
+        </div>
+
+        <div class="feature-card feature-card-pink">
+          <div class="feature-num">02</div>
+          <h3 class="feature-heading">Answer Generation</h3>
+          <p class="feature-desc">
+            LangGraph retrieves the most relevant chunks and synthesises a cited, grounded answer.
+          </p>
+          <div class="screenshot-wrap">
+            <img src="assets/02AnswerGeneration.png" alt="Answer Generation UI" class="screenshot" />
+          </div>
+        </div>
+
+        <div class="feature-card feature-card-cyan">
+          <div class="feature-num">03</div>
+          <h3 class="feature-heading">Evaluation</h3>
+          <p class="feature-desc">
+            Built-in RAG evaluation scores faithfulness, relevance, and context recall on every run.
+          </p>
+          <div class="screenshot-wrap">
+            <img src="assets/03Evaluation.png" alt="Evaluation UI" class="screenshot" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICKSTART -->
+  <section class="section section-light" id="quickstart">
+    <div class="container quickstart-wrap">
+      <div class="quickstart-text">
+        <div class="section-label">Quickstart</div>
+        <h2 class="section-title">Up and running<br />in three commands.</h2>
+        <p class="section-sub">
+          Clone, configure your API key, and let Docker handle the rest. The full UI opens at <code>localhost:8501</code>.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/eeshangpt/Product-RAG-Starter" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="code-block-wrap">
+        <div class="code-block">
+          <div class="code-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-bar-label">terminal</span>
+          </div>
+          <pre class="code-body"><span class="c"># 1. Clone and configure</span>
+<span class="cmd">cp</span> .env.example .env
+<span class="c"># Set OPENAI_API_KEY in .env</span>
+
+<span class="c"># 2. Start everything</span>
+<span class="cmd">docker</span> compose up --build
+
+<span class="c"># 3. Open the UI</span>
+<span class="cmd">open</span> http://localhost:8501</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="cta-bg"></div>
+    <div class="container cta-content">
+      <h2 class="cta-title">Launching soon.</h2>
+      <p class="cta-sub">Star the repo to get notified the moment it drops.</p>
+      <a class="btn btn-white" href="https://github.com/eeshangpt/Product-RAG-Starter" target="_blank" rel="noopener">★ Star on GitHub</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">ProductionRAG</span>
+      <span class="footer-copy">Built by <a href="https://github.com/eeshangpt" target="_blank" rel="noopener">@eeshangpt</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
